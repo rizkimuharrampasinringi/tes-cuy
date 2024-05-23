@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --hijau: #035b21;
+  --birutua: #00305b;
+  --birumuda: #00f0ff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-image: url("img/bgNo1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 20px;
+}
+
+button {
+  background-color: var(--birumuda);
+  border: none;
+  color: black;
+  border-radius: 20px;
+  font-weight: 900;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #007534;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.24), 0 17px 50px rgba(0, 0, 0, 0.19);
+  color: white;
+}
+
+.title {
+  margin-bottom: -20px;
+}
+
+.container {
+  max-width: 1300px;
+  border-radius: 20px;
+  margin: auto;
+  background: var(--birutua);
+  padding: 20px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+hr {
+  height: 4px;
+  color: white;
+  background-color: white;
+}
+
+#hr2 {
+  width: 40%;
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+.input-section {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  /* background-color: salmon; */
+  margin: 0 20px 30px;
+}
+
+.input-section section {
+  display: flex;
+  flex-direction: column;
+  background-color: #00305b;
+  text-align: start;
+}
+
+/* section label {
+  margin-left: 2px;
+} */
+
+section input {
+  width: 300px;
+}
+
+.btn-number {
+  display: flex;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.input-section input {
+  width: 250px;
+  /* margin-right: 20px; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.table-section {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  margin: 0 30px;
+  /* background-color: saddlebrown; */
+}
+
+.table-container {
+  /* max-width: 200px; */
+  /* max-width: 600px; */
+  /* background: salmon; */
+  max-height: 400px; /* Set a height to make it scrollable */
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: relative; /* Required for sticky positioning */
+}
+
+.right-table {
+  flex: 1;
+  margin-left: 13px;
+  /* background-color: salmon; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: ; */
+}
+
+.left-table h2 {
+  text-align: start;
+}
+
+.right-table h2 {
+  text-align: start;
+}
+
+.left-table {
+  flex: 1;
+}
+
+/* .mid-line {
+  margin-top: 73px;
+  width: 4px;
+  height: 380px;
+  background: white;
+  color: white;
+} */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+thead {
+  background-color: var(--hijau);
+  color: white;
+  position: sticky;
+  top: 0; /* Sticks the header to the top */
+  z-index: 1; /* Ensure the header is above the table body */
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody {
+  font-weight: 900;
+  font-size: 13px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: wheat;
+}
+
+tbody tr {
+  background-color: white;
+}
+
+tbody tr:hover {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+label {
+  font-size: 20px;
+}
+
+/* Styling scrollbar untuk WebKit */
+::-webkit-scrollbar {
+  width: 1px; /* Lebar scrollbar */
+  height: 12px; /* Tinggi scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Warna background track scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Warna thumb scrollbar */
+  border-radius: 10px; /* Membuat sudut thumb melengkung */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Warna thumb scrollbar saat hover */
+}
+
+.table-scroll {
+  max-height: 400px; /* Adjust as needed */
+  overflow-y: auto;
+}

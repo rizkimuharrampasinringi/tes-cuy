@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/responsive.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="title">Random Number Generator (NIM 10122002)</h2>
+      <h2 class="title2">
+        <b>Metode Multiplicative Invers</b> f(x) = 4x<sup>2</sup>
+      </h2>
+      <hr style="margin-bottom: 20px" />
+      <h2>Input User</h2>
+      <hr id="hr2" />
+      <div class="input-section">
+        <section>
+          <label for="Z0">Masukkan Z<sub>0</sub> :</label>
+          <input
+            type="number"
+            id="Z0"
+            name="Z0"
+            value="10122002"
+            placeholder="Masukkan Z0 disini"
+          />
+        </section>
+        <section>
+          <label for="a">Masukkan a:</label>
+          <input
+            type="number"
+            id="a"
+            name="a"
+            value="19"
+            placeholder="Masukkan a disini"
+          />
+        </section>
+        <section>
+          <label for="m">Masukkan m:</label>
+          <input
+            type="number"
+            id="m"
+            name="m"
+            value="128"
+            placeholder="Masukkan m disini"
+          />
+        </section>
+      </div>
+      <button onclick="generateTables()" class="btn-number">
+        Generate Number
+      </button>
+      <div class="table-section">
+        <div class="left-table">
+          <h2>Data Pembangkit Variabel Acak (300 Data)</h2>
+          <div class="table-container">
+            <table id="randomTable">
+              <thead>
+                <tr>
+                  <th>i</th>
+                  <th>Z<sub>i</sub></th>
+                  <th>a</th>
+                  <th>m</th>
+                  <th>(a*Z<sub>i</sub>)</th>
+                  <th>Z<sub>i+1</sub></th>
+                  <th>U<sub>i</sub></th>
+                  <th>X<sub>i</sub></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Generated rows will go here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- <hr class="mid-line"></hr> -->
+        <div class="right-table">
+          <h2>
+            Jumlah Data Yang Berulang : <span id="repeatCount">0 data</span>
+          </h2>
+          <div class="table-container">
+            <table id="repeatTable">
+              <thead>
+                <tr>
+                  <th>i</th>
+                  <th>Z<sub>i</sub></th>
+                  <th>a</th>
+                  <th>m</th>
+                  <th>(a*Z<sub>i</sub>)</th>
+                  <th>Z<sub>i+1</sub></th>
+                  <th>U<sub>i</sub></th>
+                  <th>X<sub>i</sub></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Generated rows will go here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/scripts.js"></script>
+  </body>
+</html>
